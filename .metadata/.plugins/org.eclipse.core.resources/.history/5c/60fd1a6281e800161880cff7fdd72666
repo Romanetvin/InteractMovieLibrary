@@ -1,0 +1,23 @@
+package Interact.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+
+@Controller
+@RequestMapping("/movie")
+public class MovieController {
+	
+	@RequestMapping(value="/add", method=RequestMethod.GET)
+	public String addMovie(@ModelAttribute("movieForm") Movie movie ,final ModelMap model){
+		movieDao.add(movie);
+		model.addAttribute("user", "Vincent");
+		return "home";
+	}
+	
+
+}
+

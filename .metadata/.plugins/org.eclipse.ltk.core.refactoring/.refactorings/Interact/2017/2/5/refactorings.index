@@ -1,0 +1,4 @@
+1485954165708	Move 'MovieController.java' to 'controller'
+1485955560651	Move 'MovieRepository.java' to 'model'
+1485955973376	Move 'MovieRepositoryImpl.java' to 'model'
+1485956561276	Rename resource 'MovieRepositoryImpl.java'

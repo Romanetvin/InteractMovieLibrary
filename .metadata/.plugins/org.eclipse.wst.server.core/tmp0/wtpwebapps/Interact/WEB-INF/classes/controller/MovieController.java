@@ -1,0 +1,27 @@
+package Interact.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import model.MovieRepository;
+
+@Controller
+@RequestMapping("/movie")
+public class MovieController {
+	
+	Private MovieRepository movieRepository;
+	
+	
+	
+	@RequestMapping(value="/add", method=RequestMethod.POST)
+	public String addMovie(@ModelAttribute("movieForm") Movie movie ,final ModelMap model){
+		movieRepository.add(movie);
+		
+		return "home";
+	}
+	
+
+}
+

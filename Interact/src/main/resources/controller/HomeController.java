@@ -1,4 +1,4 @@
-package MovieLibrary.controller;
+package Interact.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

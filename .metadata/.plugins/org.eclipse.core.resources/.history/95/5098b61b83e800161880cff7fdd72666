@@ -1,0 +1,6 @@
+
+
+
+public class MovieRepositoryImpl implements MovieRepository{
+
+}
